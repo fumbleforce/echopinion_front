@@ -25,6 +25,8 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    nospawn: true,
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -446,11 +448,11 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'ngmin',
+    //'ngmin',
     'copy:dist',
     'cdnify',
     'cssmin',
-    'uglify',
+    //'uglify',
     'rev',
     'usemin',
     'htmlmin'
