@@ -1,56 +1,28 @@
-div.header
-  ul.nav.nav-pills.pull-right
-    li.active
-      a(ng-href="#") Home
-    li
-      a(ng-href="#") About
-    li
-      a(ng-href="#") Contact
-  h3.text-muted Echopinion
+div.header.row
+  .col-sm-6.col-sm-offset-3.col-xs-12
+    ul.nav.pull-right
+      li
+        a(ng-href="#")
+          span.glyphicon.glyphicon-log-in
+          span &nbsp; Log in
+      li
+        a(ng-href="#")
+          span.glyphicon.glyphicon-star
+          span &nbsp; Register
+    h3 Echopinion
 
-div#hashtags.jumbotron
+div.row#hashtags
+  h1.headline Join the discussion
 
-//
-  .hashtag: .size-1 Religion
-  .hashtag: .size-2 Obama
-  .hashtag: .size-4 Apple
-  .hashtag: .size-2 Github
-  .hashtag: .size-5 Shopping
-  .hashtag: .size-1 Apraxim
-  .hashtag: .size-2 Echopinion
-  .hashtag: .size-1 Religion
-  .hashtag: .size-2 Obama
-  .hashtag: .size-4 Apple
-  .hashtag: .size-2 Github
-  .hashtag: .size-5 Shopping
-  .hashtag: .size-1 Apraxim
-  .hashtag: .size-2 Echopinion
-  .hashtag: .size-1 Religion
-  .hashtag: .size-2 Obama
-  .hashtag: .size-4 Apple
-  .hashtag: .size-2 Github
-  .hashtag: .size-5 Shopping
-  .hashtag: .size-1 Apraxim
-  .hashtag: .size-2 Echopinion
-  .hashtag: .size-1 Religion
-  .hashtag: .size-2 Obama
-  .hashtag: .size-4 Apple
-  .hashtag: .size-2 Github
-  .hashtag: .size-5 Shopping
-  .hashtag: .size-1 Apraxim
-  .hashtag: .size-2 Echopinion
+  .tag-search
+    input.form-control.input-lg(placeholder="Search for topic")
 
 div.row.marketing
-  h4 HTML5 Boilerplate
-  p HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-
-  h4 Angular
-  p AngularJS is a toolset for building the framework most suited to your application development.
-
-  h4 Karma
-  p Spectacular Test Runner for JavaScript.
 
 div.footer
-  p
-    span.glyphicon.glyphicon-heart
-    |  from the Yeoman team
+  .col-sm-6.col-sm-offset-3.col-xs-12
+    ul.footer-nav.pull-left
+      li: a About
+      li: a TOS
+      li: a Support
+      li: a Privacy
